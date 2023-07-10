@@ -1,0 +1,7 @@
+.swiper_container_first {
+  width: 85%;
+}
+
+.swiper_container_first .swiper-slide-active {
+  /* width: 50% !important; */
+}

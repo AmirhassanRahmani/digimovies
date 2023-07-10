@@ -1,0 +1,30 @@
+.swiper_container {
+  position: static;
+  /* max-width: 15rem; */
+  max-width: 17rem;
+  color: white;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-slide {
+  width: 11rem;
+  height: 28rem;
+}
+
+.swiper-button-prev {
+  width: 1.2rem;
+  height: 1.2rem;
+  right: 0rem !important;
+  background: #494949;
+  border-radius: 50%;
+}
+.swiper-button-next {
+  width: 1.2rem;
+  height: 1.2rem;
+  left: 0rem !important;
+  background: #494949;
+  border-radius: 50%;
+}
