@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/digimovies/static/css/main.03a35078.css",
-    "main.js": "/digimovies/static/js/main.f4eddc89.js",
+    "main.css": "/digimovies/static/css/main.13bf474f.css",
+    "main.js": "/digimovies/static/js/main.2105065d.js",
     "static/js/787.d2fe5533.chunk.js": "/digimovies/static/js/787.d2fe5533.chunk.js",
     "static/media/back_one_head.png": "/digimovies/static/media/back_one_head.43957495079a7e7bd875.png",
     "static/media/3.webp": "/digimovies/static/media/3.9c3c91242c8aa5b645bf.webp",
@@ -76,12 +76,12 @@
     "static/media/slick.ttf": "/digimovies/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/digimovies/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/digimovies/index.html",
-    "main.03a35078.css.map": "/digimovies/static/css/main.03a35078.css.map",
-    "main.f4eddc89.js.map": "/digimovies/static/js/main.f4eddc89.js.map",
+    "main.13bf474f.css.map": "/digimovies/static/css/main.13bf474f.css.map",
+    "main.2105065d.js.map": "/digimovies/static/js/main.2105065d.js.map",
     "787.d2fe5533.chunk.js.map": "/digimovies/static/js/787.d2fe5533.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.03a35078.css",
-    "static/js/main.f4eddc89.js"
+    "static/css/main.13bf474f.css",
+    "static/js/main.2105065d.js"
   ]
 }
