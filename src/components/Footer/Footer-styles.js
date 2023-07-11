@@ -31,7 +31,7 @@ export const FooterContainer = styled.div`
   @media (max-width: 910px) {
     flex-direction: column-reverse;
     width: 100%;
-    padding: 1rem 2.5rem;
+    padding: 1rem;
   }
 `;
 

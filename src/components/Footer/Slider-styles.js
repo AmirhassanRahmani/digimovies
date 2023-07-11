@@ -22,7 +22,13 @@ export const Para = styled.div`
   bottom: 2.3rem;
   right: 2rem;
   @media (max-width: 910px) {
-    bottom : 3.5rem;
-    /* font-size : 1.3rem; */
+    bottom: 3.5rem;
+  }
+  @media (max-width: 550px) {
+    bottom: 2.5rem;
+  }
+  @media (max-width: 407px) {
+    bottom: 2rem;
+    font-size: 0.6rem;
   }
 `;

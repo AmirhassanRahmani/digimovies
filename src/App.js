@@ -7,7 +7,6 @@ import ProSearch from "./components/ProSearch/ProSearch";
 import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import Logo from "./components/Logo/Logo";
-import SwiperSlider from "./components/SwiperSlider/SwiperSlider";
 
 export const Mode = createContext();
 
