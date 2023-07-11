@@ -71,6 +71,7 @@ import Slider from "./Slider";
 import listBottomCategory from "../../utils/listBottomCategory";
 import listSerial from "../../utils/listSerial";
 import NextSlider from "./NextSlider";
+import { Link } from "react-router-dom";
 
 function Main() {
   const { darkMode } = useContext(Mode);
@@ -176,12 +177,14 @@ function Main() {
           {listCardMovies.map((item, index) => (
             <CardMovie darkMode={darkMode} key={index}>
               <Right>
-                <RightImage>
-                  <ImageSection
-                    src={size && item.src ? item.src : item.url}
-                    alt=""
-                  />
-                </RightImage>
+                <Link to={`/page/${index}`}>
+                  <RightImage>
+                    <ImageSection
+                      src={size && item.src ? item.src : item.url}
+                      alt=""
+                    />
+                  </RightImage>
+                </Link>
                 <RightBottom darkMode={darkMode}>
                   <SpanRight darkMode={darkMode}>
                     <SlideshowIcon />

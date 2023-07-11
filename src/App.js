@@ -1,13 +1,9 @@
 import { styled } from "styled-components";
 import "./App.css";
-import Header from "./components/Header/Header";
 import { createContext, useState } from "react";
-import SlickSlider from "./components/SlickSlider/SlickSlider";
-import ProSearch from "./components/ProSearch/ProSearch";
-import Main from "./components/Main/Main";
-import Footer from "./components/Footer/Footer";
-import Logo from "./components/Logo/Logo";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/Home/Home";
+import Page from "./components/Page/Page";
 export const Mode = createContext();
 
 function App() {
@@ -16,12 +12,12 @@ function App() {
   return (
     <Container darkMode={darkMode}>
       <Mode.Provider value={{ darkMode, setDarkMode }}>
-        <Header />
-        <SlickSlider />
-        <ProSearch />
-        <Main />
-        <Logo />
-        <Footer />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path={`/page/:id`} element={<Page darkMode={darkMode}/>}></Route>
+          </Routes>
+        </BrowserRouter>
       </Mode.Provider>
     </Container>
   );
