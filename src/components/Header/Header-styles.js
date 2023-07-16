@@ -4,7 +4,7 @@ import backHeadTwo from "../../images/back_two_head.webp";
 
 export const Container = styled.div`
   opacity: 0.9;
-  z-index: 100;
+  z-index: 1000;
 `;
 
 export const BackHeader = styled.div`

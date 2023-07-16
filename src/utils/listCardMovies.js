@@ -31,6 +31,11 @@ import wayout3 from "../images/wayout3.webp";
 import alldie from "../images/alldie.webp";
 import alldie2 from "../images/allide2.webp";
 import alldie3 from "../images/alldie3.webp";
+import who from "../images/who.webp";
+import kalle from "../images/kalle.webp";
+import lena from "../images/lena.webp";
+import lise from "../images/lise.webp";
+import tess from "../images/tess.webp";
 
 const listCardMovies = [
   {
@@ -68,6 +73,91 @@ const listCardMovies = [
       },
     ],
 
+    actorsImage: [
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "hassan",
+        act: "sara",
+      },
+      {
+        actor: `${who}`,
+        name: "said",
+        act: "victor",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "john",
+      },
+      {
+        actor: `${who}`,
+        name: "hassan",
+        act: "samir",
+      },
+      {
+        actor: `${who}`,
+        name: "said",
+        act: "john",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "john",
+      },
+      {
+        actor: `${who}`,
+        name: "hassan",
+        act: "john",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "hassan",
+        act: "sara",
+      },
+      {
+        actor: `${who}`,
+        name: "said",
+        act: "victor",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "john",
+      },
+      {
+        actor: `${who}`,
+        name: "hassan",
+        act: "samir",
+      },
+      {
+        actor: `${who}`,
+        name: "said",
+        act: "john",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "john",
+      },
+      {
+        actor: `${who}`,
+        name: "hassan",
+        act: "john",
+      },
+    ],
+
+    disLike: 74,
+    disColor: "#6c3",
     about:
       "داستان سه دوست که در کودکی از هم فاصله گرفتند اما در بزرگسالی پس از سالها هم را پیدا کرده‌اند اما...",
   },
@@ -106,6 +196,90 @@ const listCardMovies = [
       },
     ],
 
+    actorsImage: [
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${kalle}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${tess}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${lena}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${lise}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${tess}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${lena}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${lise}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+    ],
+    disLike: "42",
+    disColor: "#eb8307",
     about:
       "داستان شاهزاده کارل یوهان و یک دختر به‌نام لنا که به تازگی وارد زندگی‌اش شده و یکدیگر را دوست دارند اما می‌ترسند که رابطه‌شان آنها را در موقعیتی سخت و دشوار قرار دهد.",
   },
@@ -144,7 +318,100 @@ const listCardMovies = [
         info: " محصول کشور : ترکیه",
       },
     ],
-
+    actorsImage: [
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+    ],
+    disLike: "0",
+    disColor: "red",
     about:
       "داستان مرگ موکدر که دلیل مرگ او خونریزی مغزی است و خواهرش می‌گوید که جثه قاتلان متفاوت بوده. مدتی می‌گذرد تا اینکه...",
   },
@@ -182,7 +449,100 @@ const listCardMovies = [
         info: "محصول کشور : ژاپن",
       },
     ],
-
+    actorsImage: [
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+    ],
+    disLike: "0",
+    disColor: "red",
     about:
       "داستان دختری 17 ساله به‌نام سوزومه که به مردی جوان و اسرار آمیز کمک می‌کند تا درهایی را ببندد که باعث به‌وجود آمدن فاجعه در ژاپن می‌شوند.",
   },
@@ -220,7 +580,100 @@ const listCardMovies = [
         info: "محصول کشور : آرژانتین , اسپانیا",
       },
     ],
-
+    actorsImage: [
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+    ],
+    disLike: "0",
+    disColor: "red",
     about:
       "یک مهندس کامپیوتر فلج که بر روی ویلچر در زیرزمین خانه‌اش کار می‌کند ، صداهایی از چند سارق که در حال دزدی از بانک هستند را می‌شنود و…",
   },
@@ -258,7 +711,100 @@ const listCardMovies = [
         info: "محصول کشور : آمریکا",
       },
     ],
-
+    actorsImage: [
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+    ],
+    disLike: 14,
+    disColor: "#6c3",
     about:
       "یک تماس تلفنی اسرارآمیز موجب شروع بازی خطرناکی برای فردی به نام اِلیوت می شود که یک فروشنده ی ساده است. این بازی برای انجام ۱۳ کار که هر کدام شوم تر از قبلی هستند ، پاداش های بزرگی در نظر گرفته است و…",
   },
@@ -296,7 +842,100 @@ const listCardMovies = [
         info: "محصول کشور : آمریکا",
       },
     ],
-
+    actorsImage: [
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+    ],
+    disLike: 0,
+    disColor: "red",
     about:
       " داستان پدری که پس از دوازده سال حبس و دوری سعی دارد عشق دختر و نوه‌اش را به دست آورد.",
   },
@@ -334,7 +973,100 @@ const listCardMovies = [
         info: "محصول کشور : آمریکا",
       },
     ],
-
+    actorsImage: [
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+    ],
+    disLike: "0",
+    disColor: "red",
     about:
       " هفت سال پس از ویتنام، ما سئوک دو به گروهی جدید می‌پیوندد تا بر روی پرونده‌ی قتلی کار کند اما خیلی زود متوجه می‌شود که...",
   },
@@ -372,7 +1104,100 @@ const listCardMovies = [
         info: "محصول کشور : آمریکا",
       },
     ],
-
+    actorsImage: [
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+      {
+        actor: `${who}`,
+        name: "milad",
+        act: "frank",
+      },
+    ],
+    disLike: "12",
+    disColor: "#eb8307",
     about:
       " هفت دوست سیاه پوست برای آخر هفته به سفر می‌روند و در یک کلبه با یک قاتل گیر می‌افتند که...",
   },

@@ -14,7 +14,7 @@ function App() {
       <Mode.Provider value={{ darkMode, setDarkMode }}>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home />}></Route>
+            <Route path="/digimovies" element={<Home />}></Route>
             <Route path={`/page/:id`} element={<Page darkMode={darkMode}/>}></Route>
           </Routes>
         </BrowserRouter>
