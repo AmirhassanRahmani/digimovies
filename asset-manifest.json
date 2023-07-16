@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/digimovies/static/css/main.d531beb2.css",
-    "main.js": "/digimovies/static/js/main.67bfdb35.js",
+    "main.css": "/digimovies/static/css/main.fdcc3d09.css",
+    "main.js": "/digimovies/static/js/main.099ff761.js",
     "static/js/787.d2fe5533.chunk.js": "/digimovies/static/js/787.d2fe5533.chunk.js",
     "static/media/tunnel3.webp": "/digimovies/static/media/tunnel3.221736dca25034764fd3.webp",
     "static/media/back_one_head.png": "/digimovies/static/media/back_one_head.43957495079a7e7bd875.png",
@@ -80,17 +80,22 @@
     "static/media/logo.webp": "/digimovies/static/media/logo.024a77bb44036a7dce9b.webp",
     "static/media/digi_dark_logo.webp": "/digimovies/static/media/digi_dark_logo.e4cd1353db364631fae4.webp",
     "static/media/reddoor.webp": "/digimovies/static/media/reddoor.2ff17c05e77bca976be3.webp",
+    "static/media/tess.webp": "/digimovies/static/media/tess.321347c4ff7e7586ff6d.webp",
+    "static/media/lise.webp": "/digimovies/static/media/lise.3de2022ac80260137ff9.webp",
     "static/media/slick.svg": "/digimovies/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/digimovies/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/digimovies/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/lena.webp": "/digimovies/static/media/lena.1d2f20b6f542a45fad40.webp",
+    "static/media/kalle.webp": "/digimovies/static/media/kalle.239a01fabd8b8c5c498a.webp",
     "static/media/slick.woff": "/digimovies/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/who.webp": "/digimovies/static/media/who.f7b5725df1af3aa76f17.webp",
     "index.html": "/digimovies/index.html",
-    "main.d531beb2.css.map": "/digimovies/static/css/main.d531beb2.css.map",
-    "main.67bfdb35.js.map": "/digimovies/static/js/main.67bfdb35.js.map",
+    "main.fdcc3d09.css.map": "/digimovies/static/css/main.fdcc3d09.css.map",
+    "main.099ff761.js.map": "/digimovies/static/js/main.099ff761.js.map",
     "787.d2fe5533.chunk.js.map": "/digimovies/static/js/787.d2fe5533.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d531beb2.css",
-    "static/js/main.67bfdb35.js"
+    "static/css/main.fdcc3d09.css",
+    "static/js/main.099ff761.js"
   ]
 }
