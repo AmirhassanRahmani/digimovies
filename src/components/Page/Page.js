@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import listCardMovies from "../../utils/listCardMovies";
@@ -75,6 +75,7 @@ import {
   SlideContainer,
   SliderContent,
   NotFound,
+  AncerContainer,
 } from "./Page-styles";
 
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
@@ -246,7 +247,7 @@ function Page({ darkMode }) {
                       // xmlns="http://www.w3.org/2000/svg"
                       // xmlns:xlink="http://www.w3.org/1999/xlink"
                       width="100%"
-                      height="100"
+                      height="100%"
                       preserveAspectRatio="xMidYMid"
                       viewBox="0 0 550 77"
                     >
@@ -345,9 +346,11 @@ function Page({ darkMode }) {
                       موویز بپیوندید.
                     </div>
 
-                    <Ancer href="#">
-                      برای عضویت در کانال اینجا را کلیک کنید
-                    </Ancer>
+                    <AncerContainer>
+                      <Ancer href="#">
+                        برای عضویت در کانال اینجا را کلیک کنید
+                      </Ancer>
+                    </AncerContainer>
                   </CloudDiv>
                 </>
               )}
@@ -355,8 +358,24 @@ function Page({ darkMode }) {
               {index === 1 && (
                 <SliderContent>
                   <Swiper
+                    breakpoints={{
+                      300: {
+                        slidesPerView: 2,
+                      },
+
+                      768: {
+                        slidesPerView: 4,
+                      },
+
+                      900: {
+                        slidesPerView: 6,
+                      },
+
+                      1200: {
+                        slidesPerView: 8,
+                      },
+                    }}
                     spaceBetween={10}
-                    slidesPerView={8}
                     loop={true}
                     centeredSlides={true}
                     navigation={{

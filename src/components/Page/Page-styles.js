@@ -9,6 +9,10 @@ export const ContentContainer = styled.div`
   max-width: 90%;
   margin: 0 auto;
   padding: 2rem 0;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    max-width: 98%;
+  }
 `;
 
 export const Play = styled.div`
@@ -60,21 +64,26 @@ export const ImageSection = styled.div`
     object-fit: fill;
     border-radius: 1rem;
   }
+  @media (max-width: 900px) {
+    width: 17rem;
+    margin: 0 auto;
+  }
 `;
 
 export const Right = styled.div`
   width: 30%;
   z-index: 10;
+  @media (max-width: 900px) {
+    margin: 0 auto;
+    width: 100%;
+  }
 `;
 
 export const Topic = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media (max-width: 900px) {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
+  flex-wrap: wrap-reverse;
 `;
 
 export const HeaderFilm = styled.div`
@@ -89,6 +98,9 @@ export const LogoSide = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+  @media (max-width: 900px) {
+    margin-right: auto;
+  }
 `;
 
 export const LogoSideRight = styled.div`
@@ -195,6 +207,9 @@ export const LeftContainer = styled.div`
   width: 95%;
   margin: 0 auto;
   position: relative;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 `;
 
 export const About = styled.div`
@@ -275,6 +290,9 @@ export const GreenContainer = styled.div`
 
 export const Left = styled.div`
   width: 70%;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 `;
 
 export const PeopleVotes = styled.div`
@@ -324,7 +342,7 @@ export const Content = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   margin-top: 4rem;
   position: relative;
   &::before {
@@ -342,6 +360,9 @@ export const Content = styled.div`
 export const PageFooter = styled.div`
   width: 85%;
   margin: 2rem auto;
+  @media (max-width: 900px) {
+    width: 95%;
+  }
 `;
 
 export const InfoSection = styled.div`
@@ -382,7 +403,7 @@ export const DarkInfoBottom = styled.div`
   height: ${(props) => (props.toggle ? "39rem" : "0rem")}; */
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding-bottom: ${(props) => props.index === 0 && "7.7rem"};
+  padding-bottom: ${(props) => props.index === 0 && "1.2rem"};
 `;
 
 export const DarkInfo = styled.div`
@@ -446,12 +467,34 @@ export const Quality = styled.div`
 export const BlackRight = styled.div`
   display: flex;
   gap: 1rem;
+  @media (max-width: 900px) {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    > * {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
 `;
 
 export const BlackLeft = styled.div`
   > :first-child {
     color: orange;
     font-weight: bold;
+
+    @media (max-width: 900px) {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    @media (max-width: 500px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
   }
   > :last-child {
     display: flex;
@@ -459,6 +502,15 @@ export const BlackLeft = styled.div`
     align-items: center;
     gap: 0.8rem;
     font-size: 0.8rem;
+    @media (max-width: 900px) {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin: 00.8rem 0;
+    }
+  }
+  @media (max-width: 900px) {
+    width: 100%;
   }
 `;
 
@@ -470,6 +522,9 @@ export const Black = styled.div`
   margin-bottom: 0.6rem;
   padding: 1rem 0.5rem;
   border-radius: 1rem;
+  @media (max-width: 900px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 export const SubDownload = styled.div`
@@ -480,6 +535,9 @@ export const SubDownload = styled.div`
   width: 95%;
   margin: 0 auto;
   background: #292929;
+  @media (max-width: 900px) {
+    height: ${(props) => (props.download ? "auto" : "0rem")};
+  }
 `;
 
 export const Download = styled.div`
@@ -515,8 +573,8 @@ export const Card = styled.div`
 export const OrangeDiv = styled.div`
   background: #ff9800;
   text-align: center;
-  font-size: 0.95rem;
-  color: black;
+  font-size: 0.9rem;
+  color: #252525;
   width: 97%;
   margin: 0 auto;
   margin-top: 2rem;
@@ -530,25 +588,29 @@ export const OrangeDiv = styled.div`
 export const CloudDiv = styled.div`
   position: relative;
   width: 97%;
+  height: 6rem;
   margin: 0 auto;
   margin-top: 1rem;
-
+  border: 2px solid #ff9800;
+  border-radius: 6px;
   > svg {
-    border: 2px solid #ff9800;
-    border-radius: 6px;
     background: #2f2f2f;
     z-index: 1;
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
   }
   > div {
     color: white;
     z-index: 5;
     position: absolute;
     top: 0.5rem;
-    left: 35%;
-    font-size: 00.8rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
     text-align: center;
   }
 `;
@@ -576,21 +638,23 @@ export const AncerAnima = keyframes`
 `;
 
 export const Ancer = styled.a`
-  display: inline-block;
   position: absolute;
-  z-index: 5;
   top: 2rem;
-  left: 40%;
-  font-size: 1rem;
+  z-index: 5;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
   animation-name: ${AncerAnima};
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
-  overflow: hidden;
   padding: 8px 20px;
   border-radius: 6px;
-  transition: 0.2s ease-in-out;
-  border: 1px solid #2196f3;
-  white-space: nowrap;
+`;
+
+export const AncerContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
 `;
 
 export const ImageDiv = styled.div`
@@ -610,7 +674,6 @@ export const SlideContainer = styled.div`
   background: #292929;
   border-radius: 10px;
   text-align: center;
-  width: 8.5rem;
   &:hover {
     cursor: pointer;
     > div {
