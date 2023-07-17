@@ -70,7 +70,7 @@ function SlickSlider() {
   return (
     <Container>
       <SliderContainer>
-        <Slider {...settings}>
+        <Slider {...settings} >
           {size &&
             listSlider.map((item, index) => (
               <CurrentSlide key={index} item={item} index={index} />

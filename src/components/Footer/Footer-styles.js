@@ -6,6 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 1rem;
+  position: relative;
   z-index: 100;
   cursor: pointer;
 `;

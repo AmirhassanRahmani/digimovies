@@ -76,6 +76,7 @@ import {
   SliderContent,
   NotFound,
   AncerContainer,
+  DownloadSection,
 } from "./Page-styles";
 
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
@@ -107,7 +108,7 @@ function Page({ darkMode }) {
     <Container>
       <Header />
       {current.map((item, index) => (
-        <Content src={item.back} key={index}>
+        <Content src={item.back} key={index} darkMode={darkMode}>
           <ContentContainer>
             <Right>
               <ImageSection>
@@ -175,58 +176,91 @@ function Page({ darkMode }) {
       <PageFooter>
         {listPage.map((item, index) => (
           <Card>
-            <DarkInfo onClick={() => handleToggle(index)}>
+            <DarkInfo onClick={() => handleToggle(index)} darkMode={darkMode}>
               <DarkInfoTop>
-                <InfoSection>{item.title}</InfoSection>
+                <InfoSection darkMode={darkMode}>{item.title}</InfoSection>
                 <ArrowSection>
-                  <SpanDouble toggle={count === index}>
-                    <KeyboardArrowLeftIcon style={{ color: "white" }} />
+                  <SpanDouble toggle={count === index} darkMode={darkMode}>
+                    <KeyboardArrowLeftIcon />
                     <KeyboardArrowLeftIcon style={{ color: "orange" }} />
                   </SpanDouble>
                 </ArrowSection>
               </DarkInfoTop>
             </DarkInfo>
-            <DarkInfoBottom toggle={count === index} index={index}>
+            <DarkInfoBottom
+              toggle={count === index}
+              index={index}
+              darkMode={darkMode}
+            >
               {index === 0 && (
                 <>
-                  <Download onClick={() => setDownload(!download)}>
-                    <RigthDownload>
-                      <FileDownloadOutlinedIcon />
-                      <span>نسخه زیرنویس چسبیده فارسی</span>
-                    </RigthDownload>
-                    <LeftDownload download={download}>
-                      <KeyboardArrowLeftIcon style={{ color: "white" }} />
-                      <KeyboardArrowLeftIcon style={{ color: "orange" }} />
-                    </LeftDownload>
-                  </Download>
-                  <SubDownload download={download}>
-                    {[...Array(3)].map((item, index) => (
-                      <Black>
-                        <BlackRight>
-                          <DirectLink>
-                            <span>
-                              <KeyboardDoubleArrowDownIcon />
-                            </span>
-                            <span>دانلود با لینک مستقیم</span>
-                          </DirectLink>
-                          <Quality>
-                            <span>
-                              <CameraAltOutlinedIcon />
-                            </span>
-                            <span>نمونه کیفیت</span>
-                          </Quality>
-                        </BlackRight>
-                        <BlackLeft>
-                          <div>1080p Full HD WEB-DL SoftSub</div>
-                          <div>
-                            <span>Encoder : XEBEC</span>
-                            <span>5.54 GB</span>
-                            <span>Mkv</span>
-                          </div>
-                        </BlackLeft>
-                      </Black>
-                    ))}
-                  </SubDownload>
+                  <DownloadSection darkMode={darkMode}>
+                    <Download
+                      onClick={() => setDownload(!download)}
+                      darkMode={darkMode}
+                    >
+                      <RigthDownload>
+                        <FileDownloadOutlinedIcon />
+                        <span>نسخه زیرنویس چسبیده فارسی</span>
+                      </RigthDownload>
+                      <LeftDownload download={download} darkMode={darkMode}>
+                        <KeyboardArrowLeftIcon />
+                        <KeyboardArrowLeftIcon style={{ color: "#eb8307" }} />
+                      </LeftDownload>
+                    </Download>
+                    <SubDownload download={download} darkMode={darkMode}>
+                      {[...Array(3)].map((item, index) => (
+                        <Black darkMode={darkMode}>
+                          <BlackRight>
+                            <DirectLink darkMode={darkMode}>
+                              <span>
+                                <KeyboardDoubleArrowDownIcon />
+                              </span>
+                              <span>دانلود با لینک مستقیم</span>
+                            </DirectLink>
+                            <Quality darkMode={darkMode}>
+                              <span>
+                                <CameraAltOutlinedIcon />
+                              </span>
+                              <span>نمونه کیفیت</span>
+                            </Quality>
+                          </BlackRight>
+                          <BlackLeft darkMode={darkMode}>
+                            {index === 0 && (
+                              <>
+                                <div>1080p Full HD WEB-DL SoftSub</div>
+                                <div>
+                                  <span>Encoder : XEBEC</span>
+                                  <span>5.54 GB</span>
+                                  <span>Mkv</span>
+                                </div>
+                              </>
+                            )}
+                            {index === 1 && (
+                              <>
+                                <div>720p WEB-DL SoftSub</div>
+                                <div>
+                                  <span>Encoder : YTS</span>
+                                  <span>1.13 GB</span>
+                                  <span>Mkv</span>
+                                </div>
+                              </>
+                            )}
+                            {index === 2 && (
+                              <>
+                                <div>480p WEB-DL HardSub</div>
+                                <div>
+                                  <span>Encoder : DigiMoviez</span>
+                                  <span>628 MB</span>
+                                  <span>Mp4</span>
+                                </div>
+                              </>
+                            )}
+                          </BlackLeft>
+                        </Black>
+                      ))}
+                    </SubDownload>
+                  </DownloadSection>
                   <OrangeDiv>
                     <p>
                       {" "}
@@ -389,7 +423,7 @@ function Page({ darkMode }) {
                       current[0].actorsImage.map((image, index) => (
                         <SwiperSlide>
                           {" "}
-                          <SlideContainer>
+                          <SlideContainer darkMode={darkMode}>
                             <ImageDiv>
                               <img src={image.actor} alt="" />
                             </ImageDiv>
@@ -410,8 +444,12 @@ function Page({ darkMode }) {
                   </Swiper>
                 </SliderContent>
               )}
-              {index === 2 && <NotFound>موردی یافت نشد !</NotFound>}
-              {index === 3 && <NotFound>موردی یافت نشد !</NotFound>}
+              {index === 2 && (
+                <NotFound darkMode={darkMode}>موردی یافت نشد !</NotFound>
+              )}
+              {index === 3 && (
+                <NotFound darkMode={darkMode}>موردی یافت نشد !</NotFound>
+              )}
             </DarkInfoBottom>
           </Card>
         ))}

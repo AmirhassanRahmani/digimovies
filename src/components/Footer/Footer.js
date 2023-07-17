@@ -19,9 +19,11 @@ function Footer() {
   const { darkMode } = useContext(Mode);
   return (
     <Container darkMode={darkMode}>
+
       <FooterContainer>
+        
         <SliderContainer>
-          <Slider darkMode={darkMode}/>
+          <Slider darkMode={darkMode} />
         </SliderContainer>
 
         <Center darkMode={darkMode}>

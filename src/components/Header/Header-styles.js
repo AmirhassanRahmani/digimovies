@@ -2,14 +2,10 @@ import { styled } from "styled-components";
 import backHeadOne from "../../images/back_one_head.png";
 import backHeadTwo from "../../images/back_two_head.webp";
 
-export const Container = styled.div`
-  opacity: 0.9;
-  z-index: 1000;
-`;
+export const Container = styled.div``;
 
 export const BackHeader = styled.div`
   position: relative;
-  z-index: -1;
   display: ${(props) => (props.darkMode ? "flex" : "none")};
 `;
 
@@ -17,18 +13,22 @@ export const BackLeft = styled.div`
   position: absolute;
   top: -4.3rem;
   left: -5.5rem;
+  right: auto;
   width: 49rem;
   height: 43rem;
   background-image: url(${backHeadOne});
+  background-repeat: no-repeat;
 `;
 
 export const BackRight = styled.div`
   position: absolute;
   top: -12.5rem;
   right: -50rem;
+  left: auto;
   width: 70rem;
   height: 38rem;
   background-image: url(${backHeadTwo});
+  background-repeat: no-repeat;
 `;
 
 export const HeaderTop = styled.div``;
@@ -145,6 +145,8 @@ export const HeaderBottom = styled.div`
   background: ${(props) =>
     props.darkMode ? "rgba(34,34,34,.9);" : "rgba(252, 255, 255, 0.9)"};
   box-shadow: 0px 0px 15px 0px rgba(100, 100, 100, 0.1);
+  position: relative;
+  z-index: 1000;
 `;
 
 export const HeaderBottomContainer = styled.div`

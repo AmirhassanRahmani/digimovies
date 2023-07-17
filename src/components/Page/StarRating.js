@@ -19,7 +19,7 @@ function StarRating() {
               onClick={() => setRating(ratingValue)}
             />
             <FaStar
-              color={ratingValue <= (hover || rating) ? " #f6b801" : "#ccc"}
+              color={ratingValue <= (hover || rating) ? " #f6b801" : "#ccc"}              
               size={20}
               className="star"
               onMouseEnter={() => setHover(ratingValue)}

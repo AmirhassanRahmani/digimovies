@@ -81,11 +81,12 @@ function Header() {
 
   return (
     <Container>
+
       {/* <BackHeader darkMode={darkMode}>
         <BackLeft></BackLeft>
         <BackRight></BackRight>
       </BackHeader> */}
-      
+
       <HeaderTop>
         <HeaderTopContainer>
           <TopRight>
@@ -185,11 +186,15 @@ function Header() {
         </SlideTop>
         <SlideBottom>
           {listHeaderMenu.map((item, index) => (
-            <SlideItem title={item.top} dropdown={item.Hide} index={index} darkMode={darkMode}/>
+            <SlideItem
+              title={item.top}
+              dropdown={item.Hide}
+              index={index}
+              darkMode={darkMode}
+            />
           ))}
         </SlideBottom>
       </HeaderSliding>
-
     </Container>
   );
 }

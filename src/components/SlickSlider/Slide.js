@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 
 function Slide({ cell }) {
   return (
-    <Container>
+    <Container >
       <img src={cell} alt="" />
     </Container>
   );

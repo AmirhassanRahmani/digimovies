@@ -45,6 +45,7 @@ const Container = styled.div`
   z-index: 5;
   position: relative;
   top: 0.8rem;
+
   @media (max-width: 1400px) {
     top: 1.3rem;
   }

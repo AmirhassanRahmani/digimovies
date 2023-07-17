@@ -352,7 +352,8 @@ export const Content = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: ${(props) =>
+      props.darkMode ? "rgba(0, 0, 0, 0.6)" : "rgba(255, 255, 255, 0.78)"};
   }
   z-index: -1;
 `;
@@ -367,7 +368,7 @@ export const PageFooter = styled.div`
 
 export const InfoSection = styled.div`
   font-size: 0.85rem;
-  color: white;
+  color: ${(props) => (props.darkMode ? "#fff" : "#000")};
 `;
 
 export const SpanDouble = styled.span`
@@ -379,6 +380,7 @@ export const SpanDouble = styled.span`
   > :first-child {
     position: relative;
     left: -1.5rem;
+    color: ${(props) => (props.darkMode ? "#fff" : "#000")}!important;
   }
   transition: transform 0.2s ease-in-out;
   transform: ${(props) => (props.toggle ? "rotate(-90deg)" : "0deg")};
@@ -394,7 +396,7 @@ export const DarkInfoTop = styled.div`
 
 export const DarkInfoBottom = styled.div`
   color: white;
-  background: #262626;
+  background: ${(props) => (props.darkMode ? "#262626" : "#f9f9f9")};
   transition: height 0.5s linear;
   display: ${(props) => (props.toggle ? "flex" : "none")};
   flex-direction: column;
@@ -407,7 +409,7 @@ export const DarkInfoBottom = styled.div`
 `;
 
 export const DarkInfo = styled.div`
-  background: #1d1d1d;
+  background: ${(props) => (props.darkMode ? "#1d1d1d" : "#fff")};
   padding: 0.8rem 1rem;
   border-right: 4px solid #eb8307;
   border-radius: 10px;
@@ -428,10 +430,9 @@ export const RigthDownload = styled.div`
 
 export const DirectLink = styled.div`
   font-size: 00.8rem;
-  color: white;
-  background: #292929;
-  border: 2px solid #292929;
-  border-radius: 10px;
+  color: ${(props) => (props.darkMode ? "#fff" : "#000")};
+  border: 2px solid ${(props) => (props.darkMode ? "#292929" : "#ccc")};
+  background: ${(props) => (props.darkMode ? "#292929" : "#fff")};
   display: flex;
   align-items: center;
   gap: 0.1rem;
@@ -449,7 +450,9 @@ export const Quality = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  border: 2px solid #474747;
+  background: ${(props) => (props.darkMode ? "#000" : "#fff")};
+  border: 2px solid ${(props) => (props.darkMode ? "#474747" : "#ccc")};
+  color: ${(props) => (props.darkMode ? "#fff" : "#000")};
   border-radius: 3rem;
   padding: 0.5rem 0.8rem;
   > * {
@@ -457,7 +460,7 @@ export const Quality = styled.div`
   }
   > :first-child > * {
     font-size: 1.3rem;
-    color: orange;
+    color: #eb8307;
   }
   > :last-child {
     font-size: 0.8rem;
@@ -481,7 +484,7 @@ export const BlackRight = styled.div`
 
 export const BlackLeft = styled.div`
   > :first-child {
-    color: orange;
+    color: #eb8307;
     font-weight: bold;
 
     @media (max-width: 900px) {
@@ -508,6 +511,7 @@ export const BlackLeft = styled.div`
       justify-content: space-between;
       margin: 00.8rem 0;
     }
+    color: ${(props) => (props.darkMode ? "white" : "black")};
   }
   @media (max-width: 900px) {
     width: 100%;
@@ -515,7 +519,7 @@ export const BlackLeft = styled.div`
 `;
 
 export const Black = styled.div`
-  background-color: #000;
+  background: ${(props) => (props.darkMode ? "#000" : "#f2f2f2")};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -532,9 +536,7 @@ export const SubDownload = styled.div`
   transition: all 0.5s ease-in-out;
   padding: ${(props) => (props.download ? "1rem" : "0rem")};
   height: ${(props) => (props.download ? "18rem" : "0rem")};
-  width: 95%;
-  margin: 0 auto;
-  background: #292929;
+  background: ${(props) => (props.darkMode ? "#292929" : "#f9f9f9")};
   @media (max-width: 900px) {
     height: ${(props) => (props.download ? "auto" : "0rem")};
   }
@@ -544,10 +546,18 @@ export const Download = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  background: ${(props) => (props.darkMode ? "#1d1d1d" : "#fff")};
+  color: ${(props) => (props.darkMode ? "#fff" : "#1d1d1d")};
+  padding: 1rem;
+  border-radius: 10px;
+`;
+
+export const DownloadSection = styled.div`
   width: 95%;
   margin: 0 auto;
   margin-top: 2rem;
-  background: #1d1d1d;
+  background: ${(props) => (props.darkMode ? "" : "#e6e6e6")};
   padding: 1rem;
   border-radius: 10px;
 `;
@@ -561,6 +571,7 @@ export const LeftDownload = styled.div`
   > :first-child {
     position: relative;
     left: -1.5rem;
+    color: ${(props) => (props.darkMode ? "#fff" : "#000")}!important;
   }
   transition: transform 0.2s ease-in-out;
   transform: ${(props) => (props.download ? "rotate(-90deg)" : "0deg")};
@@ -671,7 +682,8 @@ export const ImageDiv = styled.div`
 `;
 
 export const SlideContainer = styled.div`
-  background: #292929;
+  background: ${(props) => (props.darkMode ? "#292929" : "#ccc")};
+  color: ${(props) => (props.darkMode ? "#fff" : "#000")};
   border-radius: 10px;
   text-align: center;
   &:hover {
@@ -691,4 +703,5 @@ export const SliderContent = styled.div`
 export const NotFound = styled.div`
   padding: 0.8rem;
   font-size: 0.9rem;
+  color: ${(props) => (props.darkMode ? "#fff" : "#000")};
 `;

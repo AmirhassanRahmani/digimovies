@@ -2,19 +2,19 @@ import { styled } from "styled-components";
 
 export const Container = styled.div`
   margin-top: 1rem;
+
 `;
 
 export const SliderContainer = styled.div`
   max-width: 85%;
-  /* max-width: 75%; */
   margin: 0 auto;
+
   .slick-prev::before {
     display: none;
   }
   .slick-next::before {
     display: none;
   }
-
   @media (max-width: 880px) {
     max-width: 100%;
     margin: 0 auto;
